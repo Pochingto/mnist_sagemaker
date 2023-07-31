@@ -15,8 +15,8 @@ from pickle import dump
 # This is the location where the SageMaker Processing job
 # will save the input dataset.
 BASE_DIRECTORY = "/opt/ml/processing"
-TRAIN_DATA_FILEPATH = Path(BASE_DIRECTORY) / "input" / "mnist_train.csv"
-TEST_DATA_FILEPATH = Path(BASE_DIRECTORY) / "input" / "mnist_test.csv"
+TRAIN_DATA_FILEPATH = Path(BASE_DIRECTORY) / "input" / "train" / "mnist_train.csv"
+TEST_DATA_FILEPATH = Path(BASE_DIRECTORY) / "input" / "test" / "mnist_test.csv"
 
 
 def _save_splits(base_directory, train, validation, test):
